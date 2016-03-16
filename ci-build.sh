@@ -4,7 +4,7 @@ set -e
 
 if test "$platform" = "bash"; then
     echo Building on Ubuntu Linux x86_64
-    sudo apt-get install build-essential autoconf
+    sudo apt-get install build-essential autoconf libtool
 elif test "$platform" = "msys32"; then
     echo Building on Msys2 i686
 elif test "$platform" = "mingw32"; then
